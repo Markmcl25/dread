@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dread — Art House Horror Reviews</title>
+  <meta name="description" content="Reviews and scores for art house and elevated horror.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">DREAD<span>.</span></a>
+    <nav>
+      <a href="#films">Films</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Art house &amp; elevated horror</p>
+      <h1>Fear, <em>considered.</em></h1>
+      <p class="lede">Critic and audience scores for the strange, slow and unsettling end of horror.</p>
+    </section>
+
+    <section id="films" class="films">
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search films, directors, studios…" aria-label="Search films">
+        <select id="sort" aria-label="Sort films">
+          <option value="critic">Top critic score</option>
+          <option value="audience">Top audience score</option>
+          <option value="year">Newest</option>
+          <option value="title">Title A–Z</option>
+        </select>
+      </div>
+      <div id="filters" class="filters" role="group" aria-label="Filter by studio"></div>
+      <div id="grid" class="grid"></div>
+      <p id="empty" class="empty" hidden>No films match that search.</p>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>A work in progress. Scores shown are placeholder sample data.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Dread. Built with care for the dark.</p>
+  </footer>
+
+  <script src="js/films.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
